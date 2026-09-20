@@ -1,2 +1,0 @@
-# Emergencia
-Ajuda as pessoas
