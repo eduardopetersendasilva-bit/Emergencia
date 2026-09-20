@@ -1,183 +1,84 @@
-
 <!DOCTYPE html>
 <html lang="pt-BR">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Jardim da Lua</title>
+    <title>Jardim da Lua - Ajuda</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- CABEÇALHO -->
-    <header class="cabecalho">
-
-        <div>
-            <h1>🌙 Jardim da Lua</h1>
-            <p>Seu espaço de segurança</p>
-        </div>
-
-        <button id="temaBtn" class="icone-btn">
-            🌙
-        </button>
-
+    <header>
+        <h1>🌙 Jardim da Lua</h1>
+        <p>Um espaço para encontrar ajuda quando você precisar.</p>
     </header>
 
-
-    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- CARTÃO DE BOAS-VINDAS -->
-        <section class="boas-vindas">
-
-            <p class="pequeno">COMO VOCÊ ESTÁ?</p>
-
-            <h2>Você está em um lugar seguro?</h2>
-
+        <section class="alerta">
+            <h2>🚨 Você está em perigo?</h2>
             <p>
-                Se precisar de ajuda, use uma das opções abaixo.
+                Se você estiver em uma situação de emergência,
+                procure um adulto de confiança ou um serviço de emergência.
             </p>
 
-        </section>
-
-
-        <!-- BOTÃO DE EMERGÊNCIA -->
-        <section class="emergencia">
-
-            <div class="icone-emergencia">
-                🆘
-            </div>
-
-            <div>
-                <h2>Precisa de ajuda?</h2>
-
-                <p>
-                    Em uma situação de perigo imediato,
-                    procure ajuda.
-                </p>
-            </div>
-
-            <button id="emergenciaBtn">
-                PEDIR AJUDA
+            <button onclick="ligarEmergencia()">
+                📞 Preciso de ajuda
             </button>
-
         </section>
 
+        <section class="ajuda">
+            <h2>🆘 Números importantes</h2>
 
-        <!-- AÇÕES RÁPIDAS -->
-        <section>
-
-            <h2 class="titulo-secao">
-                Ações rápidas
-            </h2>
-
-            <div class="grid">
-
-                <button class="card" id="policiaBtn">
-                    <span>🚓</span>
-                    <strong>Polícia</strong>
-                    <small>Ligar para 190</small>
-                </button>
-
-                <button class="card" id="localizacaoBtn">
-                    <span>📍</span>
-                    <strong>Localização</strong>
-                    <small>Compartilhar localização</small>
-                </button>
-
-                <button class="card" id="orientacaoBtn">
-                    <span>🛡️</span>
-                    <strong>Orientações</strong>
-                    <small>O que fazer?</small>
-                </button>
-
-                <button class="card" id="alertaBtn">
-                    <span>🔊</span>
-                    <strong>Alerta</strong>
-                    <small>Ativar som</small>
-                </button>
-
+            <div class="card">
+                <h3>🚔 Polícia</h3>
+                <p>Para situações de emergência policial.</p>
+                <a href="tel:190">Ligar para 190</a>
             </div>
 
+            <div class="card">
+                <h3>🚑 SAMU</h3>
+                <p>Para emergências médicas.</p>
+                <a href="tel:192">Ligar para 192</a>
+            </div>
+
+            <div class="card">
+                <h3>🚒 Bombeiros</h3>
+                <p>Para incêndios, acidentes e resgates.</p>
+                <a href="tel:193">Ligar para 193</a>
+            </div>
         </section>
 
+        <section class="orientacao">
+            <h2>💙 Algumas orientações</h2>
 
-        <!-- ÁREA DE ORIENTAÇÃO -->
-        <section class="orientacao" id="orientacao">
-
-            <h2>🛡️ Em uma emergência</h2>
-
-            <div class="passo">
-                <span>1</span>
-                <p>
-                    Procure um local seguro.
-                </p>
-            </div>
-
-            <div class="passo">
-                <span>2</span>
-                <p>
-                    Procure uma pessoa adulta de confiança.
-                </p>
-            </div>
-
-            <div class="passo">
-                <span>3</span>
-                <p>
-                    Se houver perigo imediato, procure os
-                    serviços de emergência.
-                </p>
-            </div>
-
-            <div class="passo">
-                <span>4</span>
-                <p>
-                    Se puder, compartilhe sua localização
-                    com alguém de confiança.
-                </p>
-            </div>
-
+            <ul>
+                <li>Procure um adulto em quem você confia.</li>
+                <li>Se estiver em perigo, vá para um lugar seguro.</li>
+                <li>Não enfrente uma situação perigosa sozinho.</li>
+                <li>Se puder, peça ajuda a alguém próximo.</li>
+            </ul>
         </section>
 
-
-        <!-- CONTATO DE CONFIANÇA -->
-        <section class="contato">
-
-            <h2>👤 Pessoa de confiança</h2>
-
+        <section class="mensagem">
+            <h2>🌟 Você não está sozinho</h2>
             <p>
-                Tenha alguém que possa ajudar você
-                quando precisar.
+                Pedir ajuda não é sinal de fraqueza.
+                Se algo estiver acontecendo com você,
+                procure alguém de confiança e conte o que está acontecendo.
             </p>
-
-            <button id="contatoBtn">
-                Adicionar contato
-            </button>
-
         </section>
 
     </main>
 
-
-    <!-- RODAPÉ -->
     <footer>
-
-        <p>🌙 Jardim da Lua</p>
-
-        <small>
-            Um projeto criado para facilitar o acesso à ajuda.
-        </small>
-
+        <p>🌙 Jardim da Lua — Um espaço de apoio e informação.</p>
     </footer>
 
-
-    <!-- JAVASCRIPT -->
     <script src="script.js"></script>
 
 </body>
-
 </html>
