@@ -1,0 +1,369 @@
+/* ================================
+   JARDIM DA LUA - STYLE.CSS
+   ================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0b1020;
+    color: #ffffff;
+    min-height: 100vh;
+    line-height: 1.6;
+}
+
+/* ================================
+   CABEÇALHO
+   ================================ */
+
+header {
+    background: rgba(12, 18, 38, 0.96);
+    padding: 18px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.navbar {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #8ab4ff;
+}
+
+nav {
+    display: flex;
+    gap: 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background: #24345f;
+    color: #9fc1ff;
+}
+
+/* ================================
+   SEÇÃO PRINCIPAL
+   ================================ */
+
+.hero {
+    min-height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    background:
+        radial-gradient(circle at top, #263867 0%, #0b1020 55%);
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 8vw, 72px);
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.hero h1 span {
+    color: #8ab4ff;
+}
+
+.hero p {
+    font-size: 19px;
+    color: #cbd5e7;
+    margin-bottom: 30px;
+}
+
+/* ================================
+   BOTÕES
+   ================================ */
+
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 12px;
+    background: #477cff;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 8px 25px rgba(71, 124, 255, 0.25);
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    background: #6190ff;
+}
+
+.btn-danger {
+    background: #d93636;
+    box-shadow: 0 8px 25px rgba(217, 54, 54, 0.25);
+}
+
+.btn-danger:hover {
+    background: #ef4c4c;
+}
+
+/* ================================
+   SEÇÕES
+   ================================ */
+
+section {
+    padding: 70px 20px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-title {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #aebbd2;
+    max-width: 700px;
+    margin: 0 auto 40px;
+}
+
+/* ================================
+   CARTÕES
+   ================================ */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background: #141d35;
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 18px;
+    padding: 25px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #477cff;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.card h3 {
+    margin-bottom: 12px;
+    color: #8ab4ff;
+}
+
+.card p {
+    color: #c5cee0;
+}
+
+/* ================================
+   ÁREA DE EMERGÊNCIA
+   ================================ */
+
+.emergency {
+    background: #160f16;
+}
+
+.emergency-box {
+    max-width: 800px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 20px;
+    text-align: center;
+    background: #21151d;
+    border: 1px solid rgba(255, 80, 80, 0.25);
+}
+
+.emergency-box h2 {
+    color: #ff7272;
+    margin-bottom: 15px;
+}
+
+.emergency-box p {
+    color: #d9cbd0;
+    margin-bottom: 25px;
+}
+
+/* ================================
+   FORMULÁRIO
+   ================================ */
+
+form {
+    max-width: 700px;
+    margin: auto;
+    background: #141d35;
+    padding: 30px;
+    border-radius: 18px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    padding: 14px;
+    border-radius: 10px;
+    border: 1px solid #33415f;
+    background: #0d1427;
+    color: white;
+    outline: none;
+    font-size: 16px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+    border-color: #477cff;
+}
+
+textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+/* ================================
+   ALERTA
+   ================================ */
+
+.alert {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    background: #183b2a;
+    color: #a7f3c2;
+    text-align: center;
+}
+
+/* ================================
+   RODAPÉ
+   ================================ */
+
+footer {
+    background: #070b16;
+    padding: 30px 20px;
+    text-align: center;
+    color: #8995aa;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+footer strong {
+    color: #8ab4ff;
+}
+
+/* ================================
+   RESPONSIVIDADE
+   ================================ */
+
+@media (max-width: 800px) {
+
+    .navbar {
+        flex-direction: column;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        min-height: 75vh;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    .section-title {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    header {
+        padding: 14px;
+    }
+
+    .logo {
+        font-size: 21px;
+    }
+
+    nav {
+        gap: 5px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 7px 9px;
+    }
+
+    section {
+        padding: 50px 15px;
+    }
+
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .card,
+    form,
+    .emergency-box {
+        padding: 20px;
+    }
+}
